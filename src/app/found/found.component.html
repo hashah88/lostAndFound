@@ -1,3 +1,26 @@
-<p>
-  found works!
-</p>
+<div class="example-container">
+  <h3> What did you find? Write the name of the object e.g: keys,phone</h3>
+  <mat-form-field>
+    <input [(ngModel)]="itemName" matInput placeholder="Object Name">
+  </mat-form-field>
+  <h3> Could you please describe the object? </h3>
+  <mat-form-field>
+    <input [(ngModel)]="itemDescription" matInput placeholder="Description">
+  </mat-form-field>
+  <h3> Where did you find? Name of the building</h3>
+
+  <mat-form-field>
+    <input [(ngModel)]="location" matInput placeholder="Building Name">
+  </mat-form-field>
+  <h3> If possible, do provide your email</h3>
+  <mat-form-field>
+    <input [(ngModel)]="email" matInput placeholder="Email">
+  </mat-form-field>
+  <h3> If possible, do provide your number</h3>
+  <mat-form-field>
+
+    <input [(ngModel)]="phoneNumber" matInput placeholder="Input">
+  </mat-form-field>
+</div>
+
+<button  (click)="addDataToDb()" mat-raised-button color="primary" class="btn-w-md ml-3"> SUBMIT</button>

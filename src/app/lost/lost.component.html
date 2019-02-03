@@ -1,3 +1,8 @@
-<h1>My first search app</h1>
-<ng-ais-instantsearch [config]="algoliaConfig">
-
+<h1>Don't worry, just start searching</h1>
+<ais-instantsearch [config]="algoliaConfig">
+        <div class="jumbotron">
+                <p class="text-center">
+                  <ais-search-box placeholder="Search by the object name you lost e.g : keys, book"></ais-search-box>
+                </p>
+                </div>
+    </ais-instantsearch>

@@ -1,9 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { NgAisModule } from 'angular-instantsearch';
-import { NgAisInstantSearch } from "angular-instantsearch";
-// import algoliasearch from 'algoliasearch/lite';
-// import instantsearch from 'instantsearch.js';
-// import { searchBox, hits } from 'instantsearch.js/es/widgets';
+
 
 
 @Component({
