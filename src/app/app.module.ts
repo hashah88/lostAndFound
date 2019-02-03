@@ -6,6 +6,9 @@ import { FormsModule }   from '@angular/forms';
 import { RouterModule, Routes } from '@angular/router';
 import { NgAisModule } from 'angular-instantsearch';
 import { MatInputModule } from '@angular/material';
+import { AngularFireModule } from '@angular/fire';
+import { AngularFirestoreModule } from '@angular/fire/firestore';
+import { environment } from '../environments/environment';
 
 
 import {MatFormFieldModule} from '@angular/material/form-field';
@@ -40,6 +43,8 @@ const appRoutes: Routes = [
     MatButtonModule,
     BrowserAnimationsModule,
     MatInputModule,
+    AngularFireModule.initializeApp(environment.firebase),
+    AngularFirestoreModule,
     NgAisModule.forRoot(),
     MatFormFieldModule,
     RouterModule.forRoot(
