@@ -1,0 +1,53 @@
+@import '@angular/material/prebuilt-themes/deeppurple-amber.css';
+
+
+.example-card {
+    max-width: 400px;
+  }
+  
+  .example-header-image {
+    background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
+    background-size: cover;
+  }
+
+
+    .mat-card {
+      background-color: #f5f5f5
+    }
+
+    #FOUND  { 
+        /* margin-top: 10cm; */
+        margin-top: 5cm;
+        height: 10cm;
+        width: 10cm;
+        float: left;
+        margin-left: 5cm;
+        /* margin: 5cm; */
+      }
+
+      #LOST {
+        height: 10cm;
+        /* margin-top: 5cm; */
+        width: 10cm;
+        float:right;
+        margin: 5cm;
+        
+        
+      }
+      .mat-raised-button {
+        height: 3cm !important;
+        width: 5cm !important;
+        margin: 2cm !important;
+
+      }
+
+      .myButton{
+          /* width: 10cm;
+          height: 10cm;
+          padding : 10cm; */
+
+          height: 3cm !important;
+          width: 5cm !important;
+          margin: 2cm !important;
+      }
+     
