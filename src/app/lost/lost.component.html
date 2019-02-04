@@ -1,8 +1,26 @@
+<div class="container">
 <h1>Don't worry, just start searching</h1>
 <ais-instantsearch [config]="algoliaConfig">
         <div class="jumbotron">
                 <p class="text-center">
-                  <ais-search-box placeholder="Search by the object name you lost e.g : keys, book"></ais-search-box>
+                  <!-- <ais-search-box #txtVal (keydown.enter)="searchThisQuery(txtVal.value)"  placeholder="Search by the object name you lost e.g : keys, book"></ais-search-box> -->
+                  <input matInput #query (keydown.enter)="searchThisQuery(query.value)" placeholder="Search by the object name you lost e.g : keys, book">
                 </p>
-                </div>
+                </div>  
     </ais-instantsearch>
+
+  
+    <div *ngIf="results.length === 0">
+        😢 Nothing found for
+        <strong>{{results.query}}</strong>.
+      </div>
+    <div *ngFor="let result of results">
+       <p> <strong>  Description of the object : </strong> </p>
+      <p>{{ result["description"] }}</p>
+      <p> <strong>  Location of the object : </strong> </p>
+      <p>{{ result["location"] }}</p>
+      <p> <strong>  Contact this person at : </strong> </p>
+      <p>{{ result["phone"] }}</p>
+    </div>
+
+</div>

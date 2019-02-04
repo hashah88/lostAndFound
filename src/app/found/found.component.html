@@ -1,4 +1,5 @@
 <div class="example-container">
+  <h1 class="title">Found</h1>
   <h3> What did you find? Write the name of the object e.g: keys,phone</h3>
   <mat-form-field>
     <input [(ngModel)]="itemName" matInput placeholder="Object Name">
@@ -21,6 +22,5 @@
 
     <input [(ngModel)]="phoneNumber" matInput placeholder="Input">
   </mat-form-field>
+  <button  (click)="addDataToDb()" mat-raised-button color="primary" class="btn-w-md ml-3"> SUBMIT</button>
 </div>
-
-<button  (click)="addDataToDb()" mat-raised-button color="primary" class="btn-w-md ml-3"> SUBMIT</button>
